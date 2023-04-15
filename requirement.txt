@@ -1,9 +1,0 @@
-scikit-learn==0.20
-streamlit==1.10.0
-plotly
-seaborn
-markdown
-hyralit_components
-hydralit
-streamlit_metrics
-millify
