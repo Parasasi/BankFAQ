@@ -1,2 +1,0 @@
-# BankFAQs
-Banking Chatbot
