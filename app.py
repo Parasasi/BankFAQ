@@ -89,7 +89,7 @@ def get_response(usrText):
         b = [questionset.index[ind]]
 
         if usrText.lower() in a:
-            return "Hi, I'm your BankingBuddy! How can I help you?"
+            return "Hi, I'm Diana! How can I help you?"
 
         if usrText.lower() in c:
             return "Ok...Alright!"
@@ -103,13 +103,13 @@ def get_response(usrText):
         elif max(cos_sims) == 0.0:
             return "Sorry, I'm not sure I understand. Can you please rephrase your question?"
 
-st.title("BankingBuddy Chatbot")
+st.title("Diana from Swiss Bank")
 
-st.write("Hi, I'm your BankingBuddy! How can I help you?")
+st.write("Hi, I'm Diana! How can I help you?")
 
 user_input = st.text_input("You: ")
 
 if user_input:
     response = get_response(user_input)
 
-    st.write("BankingBuddy:", response)
+    st.write("Diana:", response)
