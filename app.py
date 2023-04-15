@@ -1,4 +1,9 @@
-import sklearn
+#!/usr/bin/env python
+# coding: utf-8
+# In[4]:
+
+
+
 import streamlit as st
 import os
 import pandas as pd
@@ -7,10 +12,13 @@ from sklearn.model_selection import train_test_split as tts
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import LabelEncoder as LE
 from sklearn.metrics.pairwise import cosine_similarity
-
+import pickle
 import nltk
+punkt = pickle.load(open('punkt.pkl', 'rb'))
 nltk.download('punkt')
 from nltk.corpus import stopwords
+import nltk
+nltk.download('stopwords')
 
 stop_words = set(stopwords.words('english'))
 
@@ -104,7 +112,4 @@ user_input = st.text_input("You: ")
 if user_input:
     response = get_response(user_input)
 
-if response == "Bye":
-    st.write("BankingBuddy: Goodbye! Have a nice day.")
-else:
     st.write("BankingBuddy:", response)
