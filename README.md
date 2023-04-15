@@ -1,2 +1,2 @@
-# BankFAQ
-BANK FAQs CHATBOT
+# BankFAQs
+Banking Chatbot
